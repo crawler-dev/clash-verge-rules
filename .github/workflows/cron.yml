@@ -1,0 +1,37 @@
+name: cron
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 0,4,8,12,16,20 * * *'
+
+jobs:
+  generate:
+    name: Generate on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout Github Pages
+        continue-on-error: true # 忽略 gh-pages 分支未创建
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Merge Github Pages
+        run: |
+          # 避免 gh-pages 分支未创建
+          mkdir -p gh-pages
+          # 下载
+          echo "Test" > gh-pages/test.txt
+      - name: Deploy Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: gh-pages
+          branch: gh-pages
