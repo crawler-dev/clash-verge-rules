@@ -24,14 +24,14 @@ jobs:
         run: |
           # mkdir
           mkdir -p dist/gh-pages
-          mkdir -p dist/gh-pages/$(date '+%Y/%m')
+          mkdir -p dist/gh-pages/$(date '+%Y/%m/%d')
           # download
           for i in {0,1,2,3,4}
           do
             curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml -o dist/gh-pages/clash-${i}.yaml
             curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt -o dist/gh-pages/v2ray-${i}.txt
-            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml -o dist/gh-pages/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml
-            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt -o dist/gh-pages/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt
+            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml -o dist/gh-pages/$(date '+%Y/%m/%d')/clash-${i}.yaml
+            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt -o dist/gh-pages/$(date '+%Y/%m/%d')/v2ray-${i}.txt
           done
       - name: Checkout Github Pages
         continue-on-error: true # 忽略 gh-pages 分支未创建
