@@ -24,8 +24,15 @@ jobs:
         run: |
           # mkdir
           mkdir -p dist/gh-pages
-          # 
-          echo "Test" > dist/gh-pages/test.txt
+          mkdir -p dist/gh-pages/$(date '+%Y/%m')
+          # download
+          for i in {0,1,2,3,4}
+          do
+            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml -o dist/gh-pages/clash-${i}.yaml
+            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt -o dist/gh-pages/v2ray-${i}.txt
+            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml -o dist/gh-pages/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').yaml
+            curl https://clash-verge.github.io/uploads/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt -o dist/gh-pages/$(date '+%Y/%m')/${i}-$(date '+%Y%m%d').txt
+          done
       - name: Checkout Github Pages
         continue-on-error: true # 忽略 gh-pages 分支未创建
         uses: actions/checkout@v3
