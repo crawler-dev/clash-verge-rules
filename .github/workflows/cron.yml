@@ -18,6 +18,14 @@ jobs:
       group: ${{ github.ref }}
       cancel-in-progress: true
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Generate Content
+        run: |
+          # mkdir
+          mkdir -p dist/gh-pages
+          # 
+          echo "Test" > dist/gh-pages/test.txt
       - name: Checkout Github Pages
         continue-on-error: true # 忽略 gh-pages 分支未创建
         uses: actions/checkout@v3
@@ -28,8 +36,8 @@ jobs:
         run: |
           # 避免 gh-pages 分支未创建
           mkdir -p gh-pages
-          # 下载
-          echo "Test" > gh-pages/test.txt
+          # 
+          if [ -d dist/gh-pages ]; then cp -r dist/gh-pages/. gh-pages/; fi
       - name: Deploy Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
