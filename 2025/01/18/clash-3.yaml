@@ -46,106 +46,27 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: 6元高速机场:cczzuu.top
-    port: 443
-    server: 127.0.0.1
+  - name: 🇨🇳_CN_中国->🇿🇦_ZA_南非
+    port: 2222
+    server: 156.253.237.131
     type: ss
     udp: true
-    password: 6601fb90e9b3
-    cipher: aes-128-gcm
-  - name: 重度用户推荐使用机场
-    port: 443
-    server: 127.0.0.1
-    type: ss
-    udp: true
-    password: 6601fb90e9b3
-    cipher: aes-128-gcm
-  - name: 免费节点可能会泄漏访问记录
-    port: 443
-    server: 127.0.0.1
-    type: ss
-    udp: true
-    password: 6601fb90e9b3
-    cipher: aes-128-gcm
-  - name: 🇨🇳_中国_1
-    port: 21142
-    server: 120.232.217.96
-    type: trojan
-    udp: true
-    password: 0bc68743-cff8-4730-9818-9d8192ee335c
-    skip-cert-verify: true
-  - name: 🇨🇳_中国_2
-    port: 39431
-    server: 120.232.217.96
-    type: trojan
-    udp: true
-    password: 0bc68743-cff8-4730-9818-9d8192ee335c
-    skip-cert-verify: true
-  - name: 🇨🇳_中国_3
-    port: 60194
-    server: ru0195.alibabaokz.com
-    type: trojan
-    udp: true
-    sni: ru0195.alibabaokz.com
-    password: 38571ca6-6692-4559-b901-0bc5826b7661
-    skip-cert-verify: true
-  - name: 🇨🇭_瑞士
-    port: 54748
-    server: 195.15.254.25
-    type: ss
-    udp: true
-    password: ghBuJ9pZOF9MohhGyPjo3rvilQhlw9NzBDlOVDonQN0=
+    password: bfWZbxtXnPX6sSF_n9byxw
     cipher: chacha20-ietf-poly1305
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
-    port: 40037
-    server: 219.135.231.205
-    type: trojan
-    udp: true
-    password: 0bc68743-cff8-4730-9818-9d8192ee335c
-    skip-cert-verify: true
-  - name: 🇮🇹_IT_意大利
+  - name: 🇷🇺_RU_俄罗斯
     port: 989
-    server: 37.143.129.230
+    server: 185.231.233.112
     type: ss
     udp: true
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国
+  - name: 🇺🇸_US_美国_1
     port: 989
     server: 185.47.252.251
     type: ss
     udp: true
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-  - name: 🇷🇴_RO_罗马尼亚_1
-    port: 8080
-    server: 194.5.215.59
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 🇷🇴_RO_罗马尼亚_2
-    port: 989
-    server: 185.193.49.88
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇲🇩_MD_摩尔多瓦
-    port: 989
-    server: 91.132.94.200
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇺🇸_US_美国->🇰🇷_KR_韩国
-    port: 443
-    server: 96.8.121.166
-    type: trojan
-    udp: true
-    sni: rnus.goudan.world
-    password: fdd37849-e66c-464d-8b1c-56a1a16e05bf
-    skip-cert-verify: true
   - name: 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
     port: 989
     server: 156.146.40.194
@@ -167,220 +88,166 @@ proxies:
     udp: true
     password: 560b7d65c1f4b12a
     cipher: aes-256-gcm
+  - name: 🇮🇷_IR_伊朗_2
+    port: 9848
+    server: 83.147.216.173
+    type: ss
+    udp: true
+    password: zUQvFioae7KzAZ2GCMgNum
+    cipher: chacha20-ietf-poly1305
   - name: 🇺🇸_US_美国_2
+    port: 443
+    server: 35.94.25.109
+    type: ss
+    udp: true
+    password: amazonskr05
+    cipher: aes-256-cfb
+  - name: 🇺🇸_US_美国_3
+    port: 443
+    server: 52.25.110.203
+    type: ss
+    udp: true
+    password: amazonskr05
+    cipher: aes-256-cfb
+  - name: 🇲🇩_MD_摩尔多瓦
     port: 989
-    server: 185.47.252.251
+    server: 91.132.94.200
     type: ss
     udp: true
     password: f8f7aCzcPKbsF8p3
     cipher: aes-256-cfb
-  - name: 🇷🇺_RU_俄罗斯
-    port: 989
-    server: 185.231.233.112
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-    port: 25230
-    server: cm1.awslcn.info
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: cm1.awslcn.info
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: cm1.awslcn.info
-    cipher: auto
-    uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-    alterId: 0
-  - name: defaultName
+  - name: 🇬🇧_GB_英国
     port: 989
     server: 62.100.205.48
-    type: ssr
+    type: ss
     udp: true
-    obfs: plain
     password: f8f7aCzcPKbsF8p3
-    protocol: origin
     cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
-    port: 60194
-    server: ru0195.alibabaokz.com
-    type: trojan
+  - name: 🇺🇸_US_美国_4
+    port: 443
+    server: 34.221.176.100
+    type: ss
     udp: true
-    sni: ru0195.alibabaokz.com
-    password: 38571ca6-6692-4559-b901-0bc5826b7661
-    skip-cert-verify: true
+    password: amazonskr05
+    cipher: aes-256-cfb
+  - name: 🇷🇴_RO_罗马尼亚
+    port: 989
+    server: 185.193.49.88
+    type: ss
+    udp: true
+    password: f8f7aCzcPKbsF8p3
+    cipher: aes-256-cfb
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -403,28 +270,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 6元高速机场:cczzuu.top
-      - 重度用户推荐使用机场
-      - 免费节点可能会泄漏访问记录
-      - 🇨🇳_中国_1
-      - 🇨🇳_中国_2
-      - 🇨🇳_中国_3
-      - 🇨🇭_瑞士
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇮🇹_IT_意大利
-      - 🇺🇸_US_美国
-      - 🇷🇴_RO_罗马尼亚_1
-      - 🇷🇴_RO_罗马尼亚_2
-      - 🇲🇩_MD_摩尔多瓦
-      - 🇺🇸_US_美国->🇰🇷_KR_韩国
+      - 🇨🇳_CN_中国->🇿🇦_ZA_南非
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国_1
       - 🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
       - 🇮🇷_IR_伊朗_1
       - 🇷🇺_RU_俄罗斯->🇮🇳_IN_印度
+      - 🇮🇷_IR_伊朗_2
       - 🇺🇸_US_美国_2
-      - 🇷🇺_RU_俄罗斯
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_2
-      - defaultName
-      - 🇨🇳_CN_中国->🇷🇺_RU_俄罗斯_1
+      - 🇺🇸_US_美国_3
+      - 🇲🇩_MD_摩尔多瓦
+      - 🇬🇧_GB_英国
+      - 🇺🇸_US_美国_4
+      - 🇷🇴_RO_罗马尼亚
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
