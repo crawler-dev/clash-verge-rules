@@ -3,7 +3,8 @@ name: cron
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 12,13,14 * * *'
+    - cron: '30 */4 * * *'
+    - cron: '30 11,13,19,21 * * *'
 
 jobs:
   generate:
