@@ -83,12 +83,8 @@ jobs:
       - name: Merge Github Pages
         run: |
           # 避免 gh-pages 分支未创建
-          mkdir -p gh-pages
-          # 删除物理文件
-          rm -rf gh-pages/**/*.yaml
-          rm -rf gh-pages/**/*.txt
-          rm -rf gh-pages/**/*.json‌
-          # 
+          mkdir -p gh-pages‌
+          #
           if [ -d dist/gh-pages ]; then cp -rf dist/gh-pages/. gh-pages/; fi
       - name: Deploy Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
