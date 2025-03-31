@@ -85,9 +85,9 @@ jobs:
           # 避免 gh-pages 分支未创建
           mkdir -p gh-pages
           # 删除物理文件
-          rm -rf gh-pages/**/*.yaml 2>/dev/null || true # 忽略空目录错误
-          rm -rf gh-pages/**/*.txt 2>/dev/null || true # 忽略空目录错误
-          rm -rf gh-pages/**/*.json 2>/dev/null || true # 忽略空目录错误‌
+          rm -rf gh-pages/**/*.yaml
+          rm -rf gh-pages/**/*.txt
+          rm -rf gh-pages/**/*.json‌
           # 
           if [ -d dist/gh-pages ]; then cp -rf dist/gh-pages/. gh-pages/; fi
       - name: Deploy Github Pages
